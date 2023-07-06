@@ -1,0 +1,29 @@
+
+.container{
+    display: grid;
+    grid-auto-rows:minmax(200px,auto) ;
+    grid-auto-columns:minmax(auto,200px) ;
+    grid-template-areas: "A A B"
+    "C D B";
+    gap: 20px;
+}
+.box {
+    background-color: rgba(14, 13, 19, 0.8);
+    display: flex;
+    justify-content:start;
+    align-items:center;
+    font-size: 50px;
+    border-radius: 12px;
+  }
+.box1 {
+    grid-area: A;
+  }
+  .box2 {
+    grid-area: B;
+  }
+  .box3 {
+    grid-area: C;
+  }
+  .box4 {
+    grid-area: D;
+  }
